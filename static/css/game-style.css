@@ -1,0 +1,554 @@
+.slot-symbol{
+    width: 100px;
+    height: 100px
+}
+
+.doubling {
+    width: 145px;
+    height: 232px;
+    zoom:0.80;
+    background-image: url('../imgs/games/allCards.png');
+}
+
+.bananas {
+    background-image: url('../imgs/games/symbols/bananas.png');
+}
+
+.book_of_ra {
+    background-image: url('../imgs/games/symbols/book_of_ra.png');
+}
+
+.book_of_ra_deluxe {
+    background-image: url('../imgs/games/symbols/book_of_ra_deluxe.png');
+}
+
+.beetle_mania {
+    background-image: url('../imgs/games/symbols/beetle_mania.png');
+}
+
+.beetle_mania_deluxe {
+    background-image: url('../imgs/games/symbols/beetle_mania_deluxe.png');
+}
+
+.hot_target {
+    background-image: url('../imgs/games/symbols/hot_target.png');
+}
+
+.columbus {
+    background-image: url('../imgs/games/symbols/columbus.png');
+}
+
+.columbus_deluxe {
+    background-image: url('../imgs/games/symbols/columbus_deluxe.png');
+}
+
+.dolphins_pearl {
+    background-image: url('../imgs/games/symbols/dolphins_pearl.png');
+}
+
+.dolphins_pearl_deluxe {
+    background-image: url('../imgs/games/symbols/dolphins_pearl_deluxe.png');
+}
+
+.dynasty_of_min {
+    background-image: url('../imgs/games/symbols/dynasty_of_min.png');
+}
+
+.fruit_cocktail {
+    background-image: url('../imgs/games/symbols/fruit_cocktail.png');
+}
+
+.jewels_4_all {
+    background-image: url('../imgs/games/symbols/jewels_4_all.png');
+}
+
+.just_jewels {
+    background-image: url('../imgs/games/symbols/just_jewels.png');
+}
+
+.just_jewels_deluxe {
+    background-image: url('../imgs/games/symbols/just_jewels_deluxe.png');
+}
+
+.keks {
+    background-image: url('../imgs/games/symbols/keks.png');
+}
+
+.lucky_haunter {
+    background-image: url('../imgs/games/symbols/lucky_haunter.png');
+}
+
+.lucky_lady_charm {
+    background-image: url('../imgs/games/symbols/lucky_lady_charm.png');
+}
+
+.lucky_lady_charm_deluxe {
+    background-image: url('../imgs/games/symbols/lucky_lady_charm_deluxe.png');
+}
+
+.marco_polo {
+    background-image: url('../imgs/games/symbols/marco_polo.png');
+}
+
+.money_game {
+    background-image: url('../imgs/games/symbols/money_game.png');
+}
+
+.crazy_monkey {
+    background-image: url('../imgs/games/symbols/crazy_monkey.png');
+}
+
+.olivers_bar {
+    background-image: url('../imgs/games/symbols/olivers_bar.png');
+}
+
+.pharaons_gold_2 {
+    background-image: url('../imgs/games/symbols/pharaons_gold_2.png');
+}
+
+.resident {
+    background-image: url('../imgs/games/symbols/resident.png');
+}
+
+.silver_fox {
+    background-image: url('../imgs/games/symbols/silver_fox.png');
+}
+
+.sizzling_hot {
+    background-image: url('../imgs/games/symbols/sizzling_hot.png');
+}
+
+.sizzling_hot_deluxe {
+    background-image: url('../imgs/games/symbols/sizzling_hot_deluxe.png');
+}
+
+.sweet_life_2 {
+    background-image: url('../imgs/games/symbols/sweet_life_2.png');
+}
+
+.unicorn_magic {
+    background-image: url('../imgs/games/symbols/unicorn_magic.png');
+}
+
+.s0 {
+    background-position: 0 0;
+}
+
+.s1 {
+    background-position: -100px 0;
+}
+
+.s2 {
+    background-position: -200px 0;
+}
+
+.s3 {
+    background-position: -300px 0;
+}
+
+.s4 {
+    background-position: -400px 0;
+}
+
+.s5 {
+    background-position: -500px 0;
+}
+
+.s6 {
+    background-position: -600px 0;
+}
+
+.s7 {
+    background-position: -700px 0;
+}
+
+.s8 {
+    background-position: -800px 0;
+}
+
+.s9 {
+    background-position: -900px 0;
+}
+
+.s10 {
+    background-position: -1000px 0;
+}
+
+.s11 {
+    background-position: -1100px 0;
+}
+
+.s12 {
+    background-position: -1200px 0;
+}
+
+.s13 {
+    background-position: -1300px 0;
+}
+
+.s14 {
+    background-position: -1400px 0;
+}
+
+.s15 {
+    background-position: -1500px 0;
+}
+
+.c0 {
+    background-position: 0px 0;
+}
+
+.c1 {
+    background-position: -145px 0;
+}
+
+.c2 {
+    background-position: -290px 0;
+}
+
+.c3 {
+    background-position: -435px 0;
+}
+
+.c4 {
+    background-position: -580px 0;
+}
+
+.c5 {
+    background-position: -725px 0;
+}
+
+.c6 {
+    background-position: -870px 0;
+}
+
+.c7 {
+    background-position: -1015px 0;
+}
+
+.c8 {
+    background-position: -1160px 0;
+}
+
+.c9 {
+    background-position: -1305px 0;
+}
+
+.c10 {
+    background-position: -1450px 0;
+}
+
+.c11 {
+    background-position: -1595px 0;
+}
+
+.c12 {
+    background-position: -1740px 0;
+}
+
+.c13 {
+    background-position: -1885px 0;
+}
+
+.c14 {
+    background-position: -2030px 0;
+}
+
+.c15 {
+    background-position: -2175px 0;
+}
+
+.c16 {
+    background-position: -2320px 0;
+}
+
+.c17 {
+    background-position: -2465px 0;
+}
+
+.c18 {
+    background-position: -2610px 0;
+}
+
+.c19 {
+    background-position: -2755px 0;
+}
+
+.c20 {
+    background-position: -2900px 0;
+}
+
+.c21 {
+    background-position: -3045px 0;
+}
+
+.c22 {
+    background-position: -3190px 0;
+}
+
+.c23 {
+    background-position: -3335px 0;
+}
+
+.c24 {
+    background-position: -3480px 0;
+}
+
+.c25 {
+    background-position: -3625px 0;
+}
+
+.c26 {
+    background-position: -3770px 0;
+}
+
+.c27 {
+    background-position: -3915px 0;
+}
+
+.c28 {
+    background-position: -4060px 0;
+}
+
+.c29 {
+    background-position: -4205px 0;
+}
+
+.c30 {
+    background-position: -4350px 0;
+}
+
+.c31 {
+    background-position: -4495px 0;
+}
+
+.c32 {
+    background-position: -4640px 0;
+}
+
+.c33 {
+    background-position: -4785px 0;
+}
+
+.c34 {
+    background-position: -4930px 0;
+}
+
+.c35 {
+    background-position: -5075px 0;
+}
+
+.c36 {
+    background-position: -5220px 0;
+}
+
+.c37 {
+    background-position: -5365px 0;
+}
+
+.c38 {
+    background-position: -5510px 0;
+}
+
+.c39 {
+    background-position: -5655px 0;
+}
+
+.c40 {
+    background-position: -5800px 0;
+}
+
+.c41 {
+    background-position: -5945px 0;
+}
+
+.c42 {
+    background-position: -6090px 0;
+}
+
+.c43 {
+    background-position: -6235px 0;
+}
+
+.c44 {
+    background-position: -6380px 0;
+}
+
+.c45 {
+    background-position: -6525px 0;
+}
+
+.c46 {
+    background-position: -6670px 0;
+}
+
+.c47 {
+    background-position: -6815px 0;
+}
+
+.c48 {
+    background-position: -6960px 0;
+}
+
+.c49 {
+    background-position: -7105px 0;
+}
+
+.c50 {
+    background-position: -7250px 0;
+}
+
+.c51 {
+    background-position: -7395px 0;
+}
+
+.c52 {
+    background-position: -7540px 0;
+}
+
+.line {
+    position: absolute
+}
+
+.line1-igrosoft {
+    top: 159px
+}
+
+.line2-igrosoft {
+    top: 29px
+}
+
+.line3-igrosoft {
+    top: 289px
+}
+
+.line4-igrosoft {
+    top: 80px
+}
+
+.line5-igrosoft {
+    top: 35px
+}
+
+.line6-igrosoft {
+    top: 52px
+}
+
+.line7-igrosoft {
+    top: 170px
+}
+
+.line8-igrosoft {
+    top: 185px
+}
+
+.line9-igrosoft {
+    top: 70px
+}
+
+.line1-novomatic {
+    top: 105px;
+    left: -30px
+}
+
+.line2-novomatic {
+    top: 5px;
+    left: -30px
+}
+
+.line3-novomatic {
+    top: 205px;
+    left: -30px
+}
+
+.line4-novomatic {
+    top: 5px; 
+    left: -30px
+}
+
+.line5-novomatic {
+    top: 30px;
+    left: -30px
+}
+
+.line6-novomatic {
+    top: 6px; 
+    left: -30px
+}
+
+.line7-novomatic {
+    top: 105px; 
+    left: -30px
+}
+
+.line8-novomatic {
+    top: 22px;
+    left: -30px
+}
+
+.line9-novomatic {
+    top: 22px;
+    left: -30px
+}
+
+.line1-deluxe {
+    top: 108px
+}
+
+.line2-deluxe {
+    top: 5px
+}
+
+.line3-deluxe {
+    top: 205px
+}
+
+.line4-deluxe {
+    top: 15px;
+    left: -10px
+}
+
+.line5-deluxe {
+    top: 15px;
+    left: -8px
+}
+
+.line6-deluxe {
+    top: 95px;
+    left: -10px
+}
+
+.line7-deluxe {
+    top: 10px
+}
+
+.line8-deluxe {
+    top: 46px;
+    left: -10px
+}
+
+.line9-deluxe {
+    top: 68px;
+    left: -10px
+}
+
+.line10-deluxe {
+    top: 48px;
+    left: -10px
+}
+
+.diamonds {
+    background-position: -5510px 0;
+}
+
+.clubs {
+    background-position: -3625px 0;
+}
+
+.spades {
+    background-position: -7395px 0;
+}
+
+.hearts {
+    background-position: -1740px 0;
+}

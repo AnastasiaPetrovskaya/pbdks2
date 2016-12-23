@@ -1,0 +1,107 @@
+extends ../head
+
+block body
+    div#page-wrapper
+        div#page-inner
+            div.row
+                div.col-md-10.col-md-offset-1
+                    h1.page-header Склад
+            div.row
+                div.col-md-5.col-md-offset-1
+                    div.panel.panel-default
+                        div.panel-heading
+                            h4 Информация
+                        div.panel-body
+                            div.table-responsive
+                                table(style="width:100%")
+                                    tbody
+                                        tr
+                                            td Название
+                                            td 
+                                                a#a_provider(href='/stocks/'+'#{stock._id}') #{stock.name}
+                                        tr
+                                            td Номер
+                                            td #{stock.id}
+                                        tr
+                                            td Адрес
+                                            td #{stock.address}
+                                        tr
+                                            td Количество товаров
+                                            td #{stock.products.length}
+                                        tr
+                                            td(style="padding-bottom:10px") Поставщик
+                                            td(style="padding-bottom:10px") 
+                                                a(href='/providers/'+'#{provider._id}') #{provider.name}
+
+
+                div.col-md-5
+                    div#div_buy_info.panel.panel-default(style="display:none")
+                        div.panel-heading
+                            h4 Трансфер
+                        div.panel-body
+                            div.table-responsive
+                                table#invoice_info(style="width:100%")
+                                    tbody
+                                        tr
+                                            td(style="padding-bottom:15px") Склад поставщика
+                                            td 
+                                                label#provider_stock
+                                        tr
+                                            td(style="padding-bottom:15px") Товар
+                                            td 
+                                                label#product
+                                        tr
+                                            td(style="padding-bottom:15px") Цена
+                                            td 
+                                                label#price
+                                        tr
+                                            td(style="padding-bottom:15px") Склад получателя
+                                            td 
+                                                input#recipient_stock_id
+                                        tr
+                                            td(style="padding-bottom:15px") Количество товара
+                                            td 
+                                                input#amount
+                            a.btn.btn-success#add_invoice_btn Создать
+            div.row
+                div.col-md-10.col-md-offset-1
+                    div.panel.panel-default
+                        div.panel-heading
+                            h4 Товары
+                            a.btn.btn-success#add_product(data-toggle="modal", data-target="#add_product_modal")
+                                span.menu-icon.fa.fa-plus
+                            div#add_product_modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h3 Новый продукт
+                                        .modal-body
+                                            form#add_product_form(role="form")
+                                                div.form-group
+                                                    label Название
+                                                    input#name.form-control(name="name")
+                                                div.form-group
+                                                    label Артикул
+                                                    input#vendor.form-control(name="vendor")
+                                                div.form-group
+                                                    label Цена
+                                                    input#price.form-control(name="price")
+                                                div.form-group
+                                                    label Количество
+                                                    input#amount.form-control(name="amount")
+                                                div.form-group
+                                                    label Описание
+                                                    textarea#description.form-control(name="description")
+                                        .modal-footer
+                                            a#btn_add_product.btn.btn-success(data-dismiss="modal") Добавить
+                                            a.btn.btn-danger Отмена
+                        div.panel-body
+                            div.table-responsive
+                                table#products.table.table-striped(style="width:100%")
+
+block footer
+    script.
+        stock_id='#{stock._id}'
+        provider_id='#{provider._id}'
+    script(src="/js/pages/stocks/show.js")
+    script(src="/js/pages/stocks/products_table.js")

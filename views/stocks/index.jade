@@ -1,0 +1,44 @@
+extends ../head
+
+block body
+    div#page-wrapper
+        div#page-inner
+            div.row
+                div.col-md-10.col-md-offset-1
+                    h1.page-header Склады
+            div.row
+                div.col-md-10.col-md-offset-1
+                    div.panel.panel-default
+                        div.panel-heading 
+                        div.panel-body
+                            div.table-responsive
+                                table.table.table-striped(style="width:100%")
+                                    if (stocks.length == 0)
+                                        p Нет складов
+                                    else
+                                        thead
+                                            tr
+                                                th Номер
+                                                th Название
+                                                th Адрес
+                                                th Количество разновидностей товаров
+                                                th Количество всего твоваров
+                                                th
+                                        tbody
+                                            each elem in stocks
+                                                each stock in elem
+                                                    tr 
+                                                        td #{stock.id}
+                                                        td #{stock.name}
+                                                        td #{stock.address}
+                                                        td #{stock.products.length}
+                                                        td #{stock.amounts_sum}
+                                                        td
+                                                            a.stock_info.btn.btn-info.btn-sm(href='/stocks/' + '#{stock._id}' title="Подробнее")
+                                                                i.fa.fa-info
+
+
+block footer
+    script(src="/js/pages/providers/add.js")
+
+

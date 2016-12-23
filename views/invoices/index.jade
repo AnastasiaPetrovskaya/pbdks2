@@ -1,0 +1,37 @@
+extends ../head
+
+block body
+    div#page-wrapper
+        div#page-inner
+            div.row
+                div.col-md-10.col-md-offset-1
+                    h1.page-header Накладные
+            div.row
+                div.col-md-10.col-md-offset-1
+                    div.panel.panel-default
+                        div.panel-heading 
+                        div.panel-body
+                            div.table-responsive
+                                table.table.table-striped(style="width:100%")
+                                    thead
+                                        tr
+                                            th Поставщик
+                                            th Потребитель
+                                            th Артикул
+                                            th Количество
+                                            th Цена
+                                            th Стоимость
+                                    tbody
+                                        each invoice in invoices
+                                            tr
+                                                th #{invoice.provider.name}
+                                                th #{invoice.recipient.name}
+                                                th #{invoice.product_vendor}
+                                                th #{invoice.amount}
+                                                th #{invoice.price}
+                                                th #{invoice.sum}
+   
+
+
+
+

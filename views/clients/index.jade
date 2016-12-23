@@ -1,0 +1,60 @@
+extends ../head
+
+block body
+    div#page-wrapper
+        div#page-inner
+            div.row
+                div.col-md-10.col-md-offset-1
+                    h1.page-header Поставщики
+            div.row
+                div.col-md-10.col-md-offset-1
+                    div.panel.panel-default
+                        div.panel-heading 
+                            a.btn.btn-success(data-toggle="modal", data-target="#add_provider_modal")
+                                span.menu-icon.fa.fa-plus
+                        div.panel-body
+                            div.table-responsive
+                                table.table.table-striped(style="width:100%")
+                                    thead
+                                        tr
+                                            th Название
+                                            th Телефон
+                                            th ИНН
+                                            th Количество складов
+                                            th
+                                    tbody
+                                        each provider in providers
+                                            tr
+                                                th #{provider.name}
+                                                th #{provider.phone}
+                                                th #{provider.inn}
+                                                th #{provider.stocks.length}
+                                                th
+                                                    a.btn.btn-info.btn-sm(href='/providers/' + provider._id title="Подробнее")
+                                                        i.fa.fa-pencil
+    div#add_provider_modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+        .modal-dialog
+            .modal-content
+                .modal-body
+                    form#add_provider_form(role="form")
+                        div.form-group
+                            label Название поставщика
+                            input#name.form-control(name="name")
+                        div.form-group
+                            label Телефон
+                            input#phone.form-control(name="phone")
+                        div.form-group
+                            label ИНН
+                            input#inn.form-control(name="inn")
+                      //  button.btn.btn-success(type="submit" form="add_atm_form)
+                .modal-footer
+                    //button.btn.btn-success(type="submit" form="add_atm_form")
+                    a#btn_add_provider.btn.btn-success(data-dismiss="modal") Добавить
+                    a.btn.btn-danger Отмена
+
+
+
+block footer
+    script(src="/js/pages/providers/add.js")
+
+

@@ -1,0 +1,14 @@
+extends layout
+
+block head
+    .page-sidebar.sidebar.horizontal-bar
+        .page-sidebar-inner
+            ul.menu.accordion-menu
+                li.nav-heading
+                    span Навигация
+                li
+                    a(href="/")
+                        span.menu-icon.icon-briefcase
+                        p
+                            |Предметная область
+

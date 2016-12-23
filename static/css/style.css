@@ -1,0 +1,224 @@
+/* Write your custom CSS here */
+
+.panel .panel-heading {
+    height: auto;
+}
+
+.m-b-0 {
+    margin-bottom: 0;
+}
+
+.right {
+    float: right;
+}
+
+.place-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 50px 0;
+}
+
+.place-cover .panel {
+    margin-bottom: 0;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table-responsive.border {
+    border: 1px solid #ddd;
+}
+
+.table-responsive {
+    overflow-y: auto;
+    max-height: 1100px;
+}
+
+.table-mini > .table-responsive {
+    overflow-y: auto;
+    max-height: 550px;
+}
+
+td .btn.btn-xs {
+    width: 25px;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+
+.border-left {
+    border-left: 1px solid #ddd;
+}
+
+.user-profile {
+    margin-top: -75px;
+}
+
+.profile-image-container img {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #e9e9e9;
+}
+
+.alert .modal-content {
+    background: #f1d9d9;
+    color: #a94442;
+}
+
+.alert .alert-link {
+    color: #843534;
+    font-weight: 700;
+}
+
+.success .modal-content {
+    background: #dff0d8;
+    color: #3c763d;
+}
+
+.success .alert-link {
+    color: #2b542c;
+    font-weight: 700;
+}
+
+a.dropdown-toggle > i.active {
+    color: #22BAA0;
+}
+
+
+#create-message-form textarea {
+    height: 200px;
+}
+
+p.form-control {
+    border: 0;
+    font-weight: 700;
+}
+
+.p-h-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+#terminals-table table td:nth-child(5),
+#terminals-table table td:nth-child(6) {
+    min-width: 130px;
+}
+
+table tr.selected {
+    background-color: #e3e3e3 !important;
+}
+
+.table.no-border>tbody>tr>td {
+    border: 0;
+}
+
+.table>tbody>tr>td {
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.table>tbody>tr:last-child>td {
+    border: 0;
+}
+
+.table-compact > tbody > tr > td, .table-compact td {
+    padding: 1px 15px !important;
+}
+
+.label-default {
+    color: inherit;
+}
+
+.top-menu .navbar-nav > li > span {
+    display: block;
+    padding: 20px 18px;
+    color: #5f5f5f;
+    border: none;
+    position: relative;
+    line-height: 20px;
+}
+
+.panel .panel {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.color-inherit {
+    color: inherit !important;
+}
+
+.info-box-stats i {
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+#bet-stats-bet, #bet-stats-win, #bet-stats-profit, #bet-stats-count {
+    font-weight: 300;
+}
+
+/* Кастомные цвета для всплывающий окошек */
+
+.toast-error {
+    background: #f25656;
+}
+
+.toast-success {
+    background: #22baa0;
+}
+
+.toastr-warning {
+    background: #f2ca4c;
+}
+/* ---- ------ */
+
+.text-bold {font-weight: 600;}
+
+.no-border-top .table-responsive.border {
+    border-top: 0;
+}
+
+.dropdown-menu>li>span {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu li span {
+    padding: 7px 10px 7px 10px;
+    color: #5f5f5f;
+    font-size: 13px;
+}
+
+.dropdown-menu li span.disabled {
+    color: #c3c3c3;
+}
+
+.table-no-padding > tbody > tr > td, .table-no-padding td {
+    padding: 0!important;
+    padding-bottom: 10px!important;
+}
+
+.title-link:hover {
+    color: #0a6aa1;
+    cursor: pointer;
+}

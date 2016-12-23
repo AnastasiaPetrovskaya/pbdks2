@@ -1,0 +1,29 @@
+extends layout
+
+block head
+    div.navbar
+    div.page-sidebar.sidebar.horizontal-bar
+        div.page-sidebar-inner
+            ul.menu.accordion-menu
+                li.nav-heading
+                    span Навигация
+                li
+                    a(href="/")
+                        span.menu-icon.fa.fa-picture-o 
+                        p
+                            |Предметная область
+                li
+                    a(href="/providers")
+                        span.menu-icon.fa.fa-suitcase
+                        p
+                            |Поставщики
+                li
+                    a(href="/stocks")
+                        span.menu-icon.fa.fa-th-large
+                        p
+                            |Склады
+                li
+                    a(href="/invoices")
+                        span.menu-icon.fa.fa-shopping-bag
+                        p
+                            |Накладные

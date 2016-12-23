@@ -1,0 +1,74 @@
+extends ../head
+
+block body
+    div#page-wrapper
+        div#page-inner
+            div.row
+                div.col-md-10.col-md-offset-1
+                    h1.page-header Потавщик
+            div.row
+                div.col-md-5.col-md-offset-1
+                    div.panel.panel-default
+                        div.panel-heading
+                            h4 Информация
+                        div.panel-body
+                            div.table-responsive
+                                table(style="width:100%")
+                                    tbody
+                                        tr
+                                            td Название
+                                            td #{provider.name}
+                                        tr
+                                            td Телефон
+                                            td #{provider.phone}
+                                        tr
+                                            td ИНН
+                                            td #{provider.inn}
+                                        tr
+                                            td Количество складов
+                                            td #{provider.stocks.length}
+                                        tr
+                                            td Количество накладных
+                                            td #{provider.invoices.length}
+                div.col-md-5
+                    div#div_stock_info.panel.panel-default(style="display:none")
+                        div.panel-heading
+                            h4 Информация о Складе
+                        div.panel-body
+                            div.table-responsive
+                                table#stock_info(style="width:100%")
+            div.row
+                div.col-md-10.col-md-offset-1
+                    div.panel.panel-default
+                        div.panel-heading
+                            h4 Склады
+                            a.btn.btn-success#add_stock(data-toggle="modal", data-target="#add_stock_modal")
+                                span.menu-icon.fa.fa-plus
+                            div#add_stock_modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h3 Новый склад
+                                        .modal-body
+                                            form#add_stock_form(role="form")
+                                                div.form-group
+                                                    label Название
+                                                    input#name.form-control(name="name")
+                                                div.form-group
+                                                    label Номер
+                                                    input#id.form-control(name="id")
+                                                div.form-group
+                                                    label Адресс
+                                                    input#address.form-control(name="address")
+                                        .modal-footer
+                                            a#btn_add_stock.btn.btn-success(data-dismiss="modal") Добавить
+                                            a.btn.btn-danger Отмена
+                        div.panel-body
+                            div.table-responsive
+                                table#stocks.table.table-striped(style="width:100%")
+
+block footer
+    script.
+        provider_id='#{provider.id}'
+    script(src="/js/pages/providers/show.js")
+    script(src="/js/pages/providers/stocks_table.js")

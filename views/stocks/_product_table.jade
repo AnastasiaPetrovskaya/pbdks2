@@ -1,0 +1,23 @@
+if (products.length == 0)
+    p Нет товаров
+else
+    thead
+        tr
+            th Артикул
+            th Название
+            th Цена
+            th Количество
+            th
+    tbody
+        each product in products
+            tr (id='#{product._id}')
+                td #{product.vendor}
+                td #{product.name}
+                td #{product.price}
+                td #{product.amount}
+                td
+                    a.buy.product_info.btn.btn-info.btn-sm(data-id='#{product._id}' data-price='#{product.price}' data-vendor='#{product.vendor}' title="Подробнее")
+                        i.fa.fa-shopping-basket
+
+block footer
+    script(src="/js/pages/stocks/create_invoice.js")

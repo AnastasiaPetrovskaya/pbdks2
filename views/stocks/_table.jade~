@@ -1,0 +1,22 @@
+if (stocks.length == 0)
+    p Нет банкоматов
+else
+    thead
+        tr
+            th Номер
+            th Название
+            th Адрес
+            th Количество разновидностей товаров
+            th Количество всего твоваров
+            th
+    tbody
+        each stock in stocks
+            tr 
+                td #{stock.number}
+                td #{stock.name}
+                td #{stock.address}
+                td #{stock.products.length}
+                td #{stock.amounts_sum}
+                td
+                    a.stock_info.btn.btn-info.btn-sm(data-id='#{stock.id}' title="Подробнее")
+                        i.fa.fa-info
